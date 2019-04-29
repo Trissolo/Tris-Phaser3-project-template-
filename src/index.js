@@ -5,9 +5,15 @@ const Game = require('./scenes/Game')
 
 var config = {
     type: Phaser.AUTO,
-    //parent: 'phaser-example',
-    width: 300,
-    height: 200,
+	pixelArt: true,
+    backgroundColor: '#320822',
+    scale: {
+    	mode: Phaser.Scale.NONE,
+		//parent: 'phaser-example',
+		width: 300,
+		height: 200,
+		zoom: 3
+    },
     scene: [  Preload, Game  ]
     
 };
